@@ -1,0 +1,32 @@
+<div class="container">
+
+  <form #f="ngForm" (ngSubmit)="add()">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Firstname</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="firstname" required name="firstname" #firstname="ngModel" ngModel >
+    </div>
+    <!--<div class="alert alert danger" >
+      firstname is required
+    </div>-->s
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Lastname</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="lastname" required name="lastname" #lasttname="ngModel" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email" required name="email" #email="ngModel" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Age</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="age" required name="age" #age="ngModel" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Phone</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone" required name="phone" #phone="ngModel" ngModel>
+      </div>
+      <button class="btn btn-primary" [disabled]="f.invalid">  Add student</button>
+      
+        
+    
+  </form>
+</div>
